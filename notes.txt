@@ -1,0 +1,43 @@
+VRS.CloudPrefs
+	IEncrypt
+		Encrypt()
+		Decrypt()
+		
+	IPrefs
+		SetString()
+		GetString()
+		SetInt()
+		GetInt()
+		etc.
+		Synchronise()
+		
+Automatic sync
+Manual sync
+Conflict resolution
+
+Syncronise
+	Options - Use remote settings
+	          Replace remote settings
+			  Don't sync
+			  
+	Temporary storage of remote settings - don't replace local, just cache them for sync. Always sync in background
+
+	Sync id
+		
+	User id (store once) - use SystemInfo.deviceUniqueIdentifier + random
+	List of devices - so we can query device-specific changes (merge)
+	
+
+		
+Local values
+Cloud values
+
+		
+Slidey Ball value types:
+	Device-specific options (local only)
+		Volume, Gfx, language?
+	Synchronised options
+		Coins
+			device-specific totals
+			actual total - sums them!			
+		Balls - easy

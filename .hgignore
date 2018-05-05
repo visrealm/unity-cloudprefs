@@ -1,4 +1,10 @@
 syntax: glob
+Library/**
+Temp/**
+Bin/**
+bin/**
+obj/**
+Assembly-*
 *.iml
 .gradle
 /local.properties
@@ -8,4 +14,4 @@ syntax: glob
 /build
 /captures
 .externalNativeBuild
-Assets/**
+Assets/Plugins/**
