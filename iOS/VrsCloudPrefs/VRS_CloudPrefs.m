@@ -5,7 +5,7 @@
 
 
 VRS_CloudPrefs* _instance = nil;
-const char* VRS_CloudPrefs_CloudDidChange = "_CloudDidChange"; // Pass `userInfo` dictionary as JSON string.
+const char* VRS_CloudPrefs_CloudDidChange = "OnCloudDataChanged"; // Pass `userInfo` dictionary as JSON string.
 
 
 @interface VRS_CloudPrefs ()

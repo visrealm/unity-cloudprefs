@@ -43,7 +43,9 @@ namespace VRS.CloudPrefs
 
     public override bool Initialise(VrsCloudPrefs manager)
     {
-      base.Initialise(manager);
+      Manager = manager;
+
+      Debug.Log("VrsCloudPrefs: CloudKeyValueStoreIOS.Initialise()");
 
       VRS_CloudPrefs_InitializeWithGameObjectName(manager.gameObject.name);
       VRS_CloudPrefs_Synchronize();

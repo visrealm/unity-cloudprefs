@@ -11,7 +11,12 @@ namespace VRS.CloudPrefs
     public Crypt cryptMethod;
     public bool saltValueWithKey = true;
 
-    public override IEnumerable<string> Keys
+		public override bool Initialise(VrsCloudPrefs manager)
+		{
+      return true;
+		}
+
+		public override IEnumerable<string> Keys
     {
       get { return valueStore.Keys; }
     }

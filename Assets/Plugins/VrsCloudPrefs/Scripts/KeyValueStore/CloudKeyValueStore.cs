@@ -5,25 +5,35 @@ using System.Collections.Generic;
 namespace VRS.CloudPrefs
 {
 
+  [CreateAssetMenu(fileName = "CloudKeyValueStore", menuName = "VRS/CloudPrefs/CloudKeyValueStore", order = 1)]
   public class CloudKeyValueStore : KeyValueStore
   {
     private KeyValueStore concreteStore;
 
     public override bool Initialise(VrsCloudPrefs manager)
     {
-      base.Initialise(manager);
+      Manager = manager;
+
+      Debug.Log("VrsCloudPrefs: CloudKeyValueStore.Initialise()");
 
 #if UNITY_EDITOR
+      Debug.Log("VrsCloudPrefs: CloudKeyValueStore Initialising Editor Store");
+
       var nativeStore = ScriptableObject.CreateInstance<LocalKeyValueStore>();
       nativeStore.KeyPrefix = "REMOTE.";
       concreteStore = nativeStore;
 #elif UNITY_IOS
+      Debug.Log("VrsCloudPrefs: CloudKeyValueStore Initialising IOS Store");
+
       concreteStore = ScriptableObject.CreateInstance<CloudKeyValueStoreIOS>();
 #elif UNITY_ANDROID
+      Debug.Log("VrsCloudPrefs: CloudKeyValueStore Initialising Android Store");
+
       var nativeStore = ScriptableObject.CreateInstance<LocalKeyValueStore>();
       nativeStore.KeyPrefix = "REMOTE.";
       concreteStore = nativeStore;
 #endif
+
       return concreteStore.Initialise(manager);
     }
 

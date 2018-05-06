@@ -26,8 +26,8 @@ namespace VRS.CloudPrefs {
 
     public string Value
     {
-      get { return VrsCloudPrefs.GetString(VrsCloudPrefs.ValueStore.LocalBeforeRemote, DefaultValue);  }
-      set { VrsCloudPrefs.SetString(VrsCloudPrefs.ValueStore.LocalBeforeRemote, Key, value); }
+      get { return VrsCloudPrefs.GetString(Key, DefaultValue);  }
+      set { VrsCloudPrefs.SetString(Key, value); }
     }
 
     public UnityEvent OnRemoteValueChanged;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05F539DA209ECE6C00918C2B /* VRS_CloudPrefs_Cpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05F539D8209ECE6C00918C2B /* VRS_CloudPrefs_Cpp.mm */; };
 		5506A5731FE1FF98002E9586 /* VRS_CloudPrefs_C.m in Sources */ = {isa = PBXBuildFile; fileRef = 5506A5711FE1FF98002E9586 /* VRS_CloudPrefs_C.m */; };
 		5529823F1FDC667900144C01 /* VRS_CloudPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 5529823E1FDC667900144C01 /* VRS_CloudPrefs.m */; };
 		5537E1A31FDDC2F0001F81E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5537E1A21FDDC2F0001F81E9 /* Foundation.framework */; };
@@ -50,6 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		05F539D8209ECE6C00918C2B /* VRS_CloudPrefs_Cpp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VRS_CloudPrefs_Cpp.mm; sourceTree = "<group>"; };
+		05F539D9209ECE6C00918C2B /* VRS_CloudPrefs_Cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRS_CloudPrefs_Cpp.h; sourceTree = "<group>"; };
 		5506A5711FE1FF98002E9586 /* VRS_CloudPrefs_C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VRS_CloudPrefs_C.m; sourceTree = "<group>"; };
 		5506A5721FE1FF98002E9586 /* VRS_CloudPrefs_C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VRS_CloudPrefs_C.h; sourceTree = "<group>"; };
 		5529823A1FDC667900144C01 /* VrsCloudPrefs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = VrsCloudPrefs.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +97,8 @@
 		5529823C1FDC667900144C01 /* VrsCloudPrefs */ = {
 			isa = PBXGroup;
 			children = (
+				05F539D9209ECE6C00918C2B /* VRS_CloudPrefs_Cpp.h */,
+				05F539D8209ECE6C00918C2B /* VRS_CloudPrefs_Cpp.mm */,
 				5529823D1FDC667900144C01 /* VRS_CloudPrefs.h */,
 				5529823E1FDC667900144C01 /* VRS_CloudPrefs.m */,
 				5506A5721FE1FF98002E9586 /* VRS_CloudPrefs_C.h */,
@@ -173,6 +178,7 @@
 			files = (
 				5529823F1FDC667900144C01 /* VRS_CloudPrefs.m in Sources */,
 				5506A5731FE1FF98002E9586 /* VRS_CloudPrefs_C.m in Sources */,
+				05F539DA209ECE6C00918C2B /* VRS_CloudPrefs_Cpp.mm in Sources */,
 				55C016801FDDC4C400975E20 /* UnityString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

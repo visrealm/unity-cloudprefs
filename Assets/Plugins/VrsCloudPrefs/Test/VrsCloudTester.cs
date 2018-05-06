@@ -26,12 +26,12 @@ namespace VRS.CloudPrefs
         KeyValuePair copy = kvp;
         if (VrsCloudPrefs.HasKey(kvp.key))
         {
-          copy.value = VrsCloudPrefs.GetString(VrsCloudPrefs.ValueStore.LocalBeforeRemote, kvp.key);
-          VrsCloudPrefs.SetString(VrsCloudPrefs.ValueStore.LocalBeforeRemote, kvp.key, copy.value);
+          copy.value = VrsCloudPrefs.GetString(kvp.key);
+          VrsCloudPrefs.SetString(kvp.key, copy.value);
         }
         else
         {
-          VrsCloudPrefs.SetString(VrsCloudPrefs.ValueStore.LocalBeforeRemote, kvp.key, kvp.value);
+          VrsCloudPrefs.SetString(kvp.key, kvp.value);
         }
         newValues.Add(copy);
       }
