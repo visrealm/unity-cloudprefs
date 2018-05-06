@@ -14,4 +14,3 @@ Assembly-*
 /build
 /captures
 .externalNativeBuild
-Assets/Plugins/**
