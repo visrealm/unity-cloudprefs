@@ -16,6 +16,11 @@ namespace VRS.CloudPrefs
 
     public string KeyPrefix = "";
 
+    public override bool Initialise(VrsCloudPrefs manager)
+    {
+      return true;
+    }
+
     public override IEnumerable<string> Keys
     {
       get

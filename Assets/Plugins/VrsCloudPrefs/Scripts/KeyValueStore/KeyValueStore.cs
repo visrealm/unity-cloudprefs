@@ -8,13 +8,9 @@ namespace VRS.CloudPrefs
 
   public abstract class KeyValueStore : ScriptableObject, IKeyValueStore
   {
-    public VrsCloudPrefs Manager { get; private set; }
+    public VrsCloudPrefs Manager { get; protected set; }
 
-    public virtual bool Initialise(VrsCloudPrefs manager)
-    {
-      Manager = manager;
-      return true;
-    }
+    public abstract bool Initialise(VrsCloudPrefs manager);
     public virtual void OnRemoteDataChanged(string message) { }
 
 
